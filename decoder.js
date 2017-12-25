@@ -26,7 +26,3 @@ function decoder(str) { // LBH QVQ VG!
   });
   return decCharArray.join("");
 }
-
-// Change the inputs below to test
-rot13("SERR PBQR PNZC");
-console.log(rot13("LBH QVQ VG"));
