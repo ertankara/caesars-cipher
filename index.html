@@ -7,17 +7,20 @@
   <link href="animate.css" rel="stylesheet" type="text/css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="encoder.js"></script>
+  <script src="decoder.js"></script>
   <title>Caesars Cipher</title>
 </head>
 <body>
   <h1>Caeaser's Cipher</h1>
   <div class="container">
 
-  
+  <form action="">
+    <input type="text" name="textToDecode" id="decode">
+    <button type="button" name="button" onclick="(decoder(document.getElementById('decode').value));">Alert Value</button>
+  </form>
 
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="decoder.js"></script>
-  <script src="encoder.js"></script>
 </body>
 </html>
