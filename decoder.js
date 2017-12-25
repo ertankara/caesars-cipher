@@ -1,4 +1,4 @@
-function rot13(str) { // LBH QVQ VG!
+function decoder(str) { // LBH QVQ VG!
   var encCharArray = str.split("");
   var decUnicode = encCharArray.map(function(element) {
     if (element.charCodeAt() >= "A".charCodeAt() &&
