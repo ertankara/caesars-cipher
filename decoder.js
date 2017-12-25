@@ -1,5 +1,5 @@
 
-function decoder(str) { // LBH QVQ VG!
+function decoderEncoder(str) { // LBH QVQ VG!
 var encCharArray = str.toUpperCase().split("");
 var decUnicode = encCharArray.map(function(element) {
   if (element.charCodeAt() >= "A".charCodeAt() &&
@@ -25,7 +25,6 @@ var decUnicode = encCharArray.map(function(element) {
 var decCharArray = decUnicode.map(function(element) {
   return String.fromCharCode(element);
 });
-alert(decCharArray.join(""));
+alert(decCharArray.join("").toLowerCase());
 // return decCharArray.join("");
-
 }
