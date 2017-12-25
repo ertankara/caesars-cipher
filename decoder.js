@@ -1,6 +1,6 @@
 
 function decoder(str) { // LBH QVQ VG!
-var encCharArray = str.split("");
+var encCharArray = str.toUpperCase().split("");
 var decUnicode = encCharArray.map(function(element) {
   if (element.charCodeAt() >= "A".charCodeAt() &&
       element.charCodeAt() <= "Z".charCodeAt()) {
