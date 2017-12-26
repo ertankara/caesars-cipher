@@ -37,7 +37,7 @@ $(document).ready(function() {
     let buttonClickCounter = 0;
     function clearDivWhenClickedTooMuch(counterValue, $selector) {
       // Counter maximum limit is 5
-      if (counterValue > 5) {
+      if (counterValue > 3) {
         // Clear the content of the div
         $selector.empty();
         // Reset the counter after emptying
