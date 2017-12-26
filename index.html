@@ -14,7 +14,7 @@
 </head>
 <!-- body-class  -->
 <!-- Add dark-body class to convert -->
-<body>
+<body id="body-id">
   <!-- container class -->
   <!-- Add dark-container class to convert -->
   <div id="container-id" class="container">
@@ -24,7 +24,8 @@
   <form>
     <!-- input field  -->
     <!-- Add dark-input -->
-    <input id="input-id" type="text" name="textToDecode" placeholder="Text to encode/decode"
+    <!-- <input type="text" id="myText" value="Mickey"> -->
+    <input id="input-id" type="text" name="textToDecode" placeholder="Text to encode/decode" value=""
           class="input"><br>
     <!-- red button -->
     <div class="buttons">
@@ -33,11 +34,11 @@
       <input id="decode" type="button" name="button" class="button right-button" value="Decode Message!">
       <!-- Output field -->
       <!-- Add dark output to convert -->
+  </form>
       <div id="output-id" class="output bright-output">
-
+        <!-- Content will be added by the user inputs -->
       </div>
     </div>
-  </form>
   </div>
 </body>
 </html>
