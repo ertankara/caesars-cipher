@@ -1,16 +1,13 @@
 /* CSS rules for Caesars Cipher */
 body {
   font-size: 16px;
+  background-size: cover;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ZE_u5d7K5XZeQ080lfhTl5ojK8gjKGi2JoWNp4e6LAsOJbuz");
+
 }
 
 .dark-body {
   background-image: url("http://greycoder.com/wp-content/uploads/2013/09/mystery-man-wallpaper.jpg");
-  background-size: cover;
-}
-
-.bright-body {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ZE_u5d7K5XZeQ080lfhTl5ojK8gjKGi2JoWNp4e6LAsOJbuz");
-  background-size: cover;
 }
 
 .container {
@@ -19,9 +16,12 @@ body {
   margin: auto;
   margin-top: 5%;
   text-align: center;
-  padding-top: 3em;
+  padding-top: 2em;
   border: 2px black solid;
   background-color: #FAF0BE;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
 }
 
 .dark-container {
@@ -31,14 +31,12 @@ body {
   background: linear-gradient(#4c4c4c 0%, #666666 9%, #595959 17%, #474747 26%, #666666 44%, #2c2c2c 59%, #2b2b2b 71%, #2c2c2c 74%, #1c1c1c 88%, #111111 91%, #000000 97%, #131313 100%);
 }
 
-.bright-container {
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+.heading {
+  color: #F28E1C;
 }
 
-.header {
-  color: #F28E1C;
+.dark-heading{
+  color: #ee0000;
 }
 
 .left-button {
