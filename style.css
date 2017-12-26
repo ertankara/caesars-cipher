@@ -87,6 +87,7 @@ body {
   visibility: hidden;
 }
 
+/* TODO style bright output*/
 .bright-output {
   visibility: visible;
   border: 2px black solid;
