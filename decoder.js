@@ -16,9 +16,6 @@ var decUnicode = encCharArray.map(function(element) {
         return element.charCodeAt() - 13;
       }
     }
-    else {
-      return " ".charCodeAt();
-    }
   }
   return element.charCodeAt();
 });
