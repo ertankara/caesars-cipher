@@ -17,27 +17,23 @@
 <body>
   <!-- container class -->
   <!-- Add dark-container class to convert -->
-  <div class="container">
+  <div id="container-id" class="container">
   <!-- heading class -->
   <!-- Add dark-heading class to convert -->
-    <h1 class="heading">Caeaser's Cipher</h1>
+    <h1 id="heading-id" class="heading">Caeaser's Cipher</h1>
   <form>
     <!-- input field  -->
     <!-- Add dark-input -->
-    <input type="text" name="textToDecode" placeholder="Text to encode/decode"
+    <input id="input-id" type="text" name="textToDecode" placeholder="Text to encode/decode"
           class="input"><br>
     <!-- red button -->
     <div class="buttons">
-      <input type="button" name="button" class="button left-button"
-          onclick="decoderEncoder(document.getElementById('decode').value)()"
-          value="Encode Message!">
+      <input id="encode" type="button" name="button" class="button left-button" value="Encode Message!">
       <!-- green button -->
-      <input type="button" name="button" class="button right-button"
-          onclick="decoderEncoder(document.getElementById('decode').value)()"
-          value="Decode Message!">
+      <input id="decode" type="button" name="button" class="button right-button" value="Decode Message!">
       <!-- Output field -->
       <!-- Add dark output to convert -->
-      <div class="output bright-output">
+      <div id="output-id" class="output bright-output">
 
       </div>
     </div>
