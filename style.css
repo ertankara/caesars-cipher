@@ -1,5 +1,6 @@
 /* CSS rules for Caesars Cipher */
 body {
+  font-size: 16px;
   background-size: cover;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ZE_u5d7K5XZeQ080lfhTl5ojK8gjKGi2JoWNp4e6LAsOJbuz");
 
@@ -15,7 +16,7 @@ body {
   margin: auto;
   margin-top: 5%;
   text-align: center;
-  padding-top: 2em;
+  padding-top: 0.5em;
   border: 2px black solid;
   background-color: #FAF0BE;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
@@ -33,6 +34,7 @@ body {
 .heading {
   color: #F28E1C;
   font-weight: 700;
+  margin-bottom: 1em;
 }
 
 .dark-heading{
@@ -45,6 +47,8 @@ body {
   border: 2px solid;
   margin: 10px;
   margin-top: 20px;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .left-button {
@@ -67,6 +71,12 @@ body {
 .input {
   width: 400px;
   height: 50px;
+}
+
+.dark-input {
+  -webkit-box-shadow: 10px 10px 38px 61px rgba(207,207,207,1);
+  -moz-box-shadow: 10px 10px 38px 61px rgba(207,207,207,1);
+  box-shadow: 10px 10px 38px 61px rgba(207,207,207,1);
 }
 
 .output {
