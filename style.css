@@ -1,7 +1,15 @@
 /* CSS rules for Caesars Cipher */
-.dark-body {
+body {
   font-size: 16px;
+}
+
+h1 {
+  color: #F28E1C;
+}
+
+.dark-body {
   background-image: url("http://greycoder.com/wp-content/uploads/2013/09/mystery-man-wallpaper.jpg");
+  background-size: cover;
 }
 
 .bright-body {
@@ -9,24 +17,19 @@
   background-size: cover;
 }
 
-.neutral-body {
-
-}
-
-button {
-  margin-top: 20px;
-  -webkit-box-shadow: 10px 0px 25px -2px rgba(230,16,16,0.72);
-  -moz-box-shadow: 10px 0px 25px -2px rgba(230,16,16,0.72);
-  box-shadow: 10px 0px 25px -2px rgba(230,16,16,0.72);
-}
-
 .container {
-  width: 30em;
-  height: 30em;
+  width: 600px;
+  height: 600px;
   margin: auto;
   margin-top: 5%;
   text-align: center;
   padding-top: 3em;
+  border: 2px black solid;
+  background-color: #FAF0BE;
+}
+
+.neutral-container {
+  background-color: #F0FFFF;
 }
 
 .dark-container {
@@ -43,5 +46,41 @@ button {
 }
 
 .header {
-    color: red;
+  color: red;
+}
+
+.left-button {
+  -webkit-box-shadow: 10px 0px 25px -2px rgba(230,16,16,0.72);
+  -moz-box-shadow: 10px 0px 25px -2px rgba(230,16,16,0.72);
+  box-shadow: 10px 0px 25px -2px rgba(230,16,16,0.72);
+  width: 10em;
+  height: 5em;
+  border: 2px solid;
+  background-color: #A41313;
+  color: #fff;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.right-button {
+  -webkit-box-shadow: 10px 0px 25px -2px rgba(53,196,43,1);
+  -moz-box-shadow: 10px 0px 25px -2px rgba(53,196,43,1);
+  box-shadow: 10px 0px 25px -2px rgba(53,196,43,1);
+  width: 10em;
+  height: 5em;
+  border: 2px solid;
+  background-color: #66FF00;
+  color: #000;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.input {
+  width: 400px;
+  height: 50px;
+}
+
+.text-box {
+  width: 500px;
+  height: 500px;
 }

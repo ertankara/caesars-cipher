@@ -4,28 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/icon"
+    href="https://cdn4.iconfinder.com/data/icons/defaulticon/icons/png/256x256/help.png">
   <link href="animate.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="style.css" type="text/css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="decoder.js"></script>
   <title>Caesars Cipher</title>
 </head>
-<body class="dark-body">
-  <div class="container dark-container">
-  <div class="header">
+<body>
+  <!-- container class -->
+  <div id="theme" class="container">
+  <!-- header class -->
+  <div id="header-tag">
     <h1>Caeaser's Cipher</h1>
   </div>
   <form>
-    <input type="text" name="textToDecode" id="decode"><br>
+    <input type="text" name="textToDecode" placeholder="Text to encode/decode"
+          id="decode" class="input"><br>
     <div class="buttons">
-      <button type="submit" name="button"
-              onclick="(decoderEncoder(document.getElementById('decode').value));">
-        Encode Message!
-      </button>
-      <button type="submit" name="button"
-              onclick="">
-        Decode Message!
-      </button>
+      <input type="button" name="button" class="left-button"
+          onclick="decoderEncoder(document.getElementById('decode').value)()"
+          value="Encode Message!">
+      <input type="button" name="button" class="right-button"
+          onclick="decoderEncoder(document.getElementById('decode').value)()"
+          value="Decode Message!">
+      <div class="output">
+
+      </div>
     </div>
   </form>
   </div>
