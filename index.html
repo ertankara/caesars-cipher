@@ -12,25 +12,25 @@
   <script src="decoder.js"></script>
   <title>Caesars Cipher</title>
 </head>
-<body class="bright-body">
+<body class="dark-body">
   <!-- container class -->
-  <div id="theme" class="container bright-container">
+  <div id="theme" class="container dark-container">
   <!-- heading class -->
-  <div id="heading-tag">
-    <h1 class="heading">Caeaser's Cipher</h1>
+  <div id="heading-tag" class=".heading dark-heading">
+    <h1>Caeaser's Cipher</h1>
   </div>
   <form>
     <input type="text" name="textToDecode" placeholder="Text to encode/decode"
           id="decode" class="input"><br>
     <div class="buttons">
-      <input type="button" name="button" class="left-button"
+      <input type="button" name="button" class="button left-button"
           onclick="decoderEncoder(document.getElementById('decode').value)()"
           value="Encode Message!">
-      <input type="button" name="button" class="right-button"
+      <input type="button" name="button" class="button right-button"
           onclick="decoderEncoder(document.getElementById('decode').value)()"
           value="Decode Message!">
-      <div class="output" id="output-box">
-
+      <div class="output dark-output" id="output-box">
+        <p>Hello world</p>
       </div>
     </div>
   </form>
