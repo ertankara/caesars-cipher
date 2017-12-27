@@ -21,7 +21,7 @@ $(document).ready(function() {
     }
     return element.charCodeAt();
   });
-  let decCharArray = decUnicode.map(function(element) {
+  const decCharArray = decUnicode.map(function(element) {
     return String.fromCharCode(element);
   });
 
@@ -33,6 +33,7 @@ $(document).ready(function() {
 
 
     /* FUNCTION DEFINITION BEGIN */
+
     // if the buttons clicked many times clear text
     let buttonClickCounter = 0;
     function clearDivWhenClickedTooMuch(counterValue, $selector) {
@@ -48,13 +49,13 @@ $(document).ready(function() {
     /* FUNCTION DEFINITION END */
 
 
-  let $body = $('#body-id');
-  let $container = $('#container-id');
-  let $heading = $('#heading-id');
-  let $inputField = $('#input-id');
-  let $encodeButton = $('#encode');
-  let $decodeButton = $('#decode');
-  let $outputField = $('#output-id');
+  const $body = $('#body-id');
+  const $container = $('#container-id');
+  const $heading = $('#heading-id');
+  const $inputField = $('#input-id');
+  const $encodeButton = $('#encode');
+  const $decodeButton = $('#decode');
+  const $outputField = $('#output-id');
 
   // Hold the elements indicated by ids to add and remove class
   const idArray = [
@@ -70,7 +71,8 @@ $(document).ready(function() {
     'dark-output'
   ];
 
-
+  // TODO: Add new effects with animate.css classes
+  // TODO: Refactor if statements
 
   // If ENCODE button is clicked
   $($encodeButton).on('click', function() {
@@ -78,7 +80,7 @@ $(document).ready(function() {
     // First parameter counter, second is the output filed
     clearDivWhenClickedTooMuch(buttonClickCounter, $outputField);
     // If the given string is empty
-    if (!(($('#input-id').val().length) !== 0)) {
+    if ($('#input-id').val().length === 0) {
         alert("Please provide proper info!");
     } else {
       ++buttonClickCounter;
